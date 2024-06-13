@@ -8,7 +8,6 @@ services:
       - GLANCES_OPT=-q --export influxdb2 --time 10
     pid: "host"
     privileged: true
-    network_mode: "host"
     depends_on:
       - influxdb
     volumes:
